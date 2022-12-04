@@ -101,6 +101,15 @@ If you set it up to run automatically with cron, use no option and it should be 
 ```
 sudo /opt/borg-scripts/borg-backup-local.sh
 ```
+### /etc/cron.d/borg-backup-local
+This is an example that will run your backup to hard drives every night at 02:00. Make sure to set up your computers for e-mail so you find out if there is a problem.
+```
+# /etc/cron.d/borg-backup-local
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+00 02 * * * root /opt/borg-scripts/borg-backup-local.sh
+```
 
 ### Generated files
 
