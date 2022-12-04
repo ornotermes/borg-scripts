@@ -1,0 +1,6 @@
+# /etc/cron.d/borg-backup-local
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+0 2 * * * root /opt/borg-scripts/borg-backup-local.sh
+
