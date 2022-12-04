@@ -11,6 +11,9 @@ I have only one of the copies connected at a time, if 1a and 1b is connected and
 
 By regularly swapping the disks it's managable to maintain a relatively recent off-line backup.
 
+## Running as root
+I run this script as root as it gets access to everything, you might be able to get it to work as a user if you create a dedicated user that's member of pretty much all groups, but I have not tested this. Some files might not even be readable by it's group and would not be able to back those up, but that could be useful if used wisely.
+
 ## Configuration
 You need to create a few files with configuration for this script, they support no comments or quoted paths at this time, don't leave any blank lines, just rows of "key=value". If you have spaces in paths, try escaping them as i havn't tested this.
 
