@@ -1,0 +1,3 @@
+1a=/backup/remote/
+2a=ssh://remote-local/backup/
+3a=ssh://remote-offsite/backup/
