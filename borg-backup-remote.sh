@@ -93,7 +93,7 @@ backups () {
 		declare -a backup_set_targets
 		for backup_target in "${!backup_targets[@]}"
 		do
-			if [ ${backup_target:1} = $backup_index ]; then
+			if [[ ${backup_target:1} = $backup_index ]]; then
 				backup_set_targets[${backup_target:0:1}]=${backup_targets[$backup_target]}
 			fi
 		done
