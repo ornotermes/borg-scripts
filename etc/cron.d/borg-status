@@ -1,0 +1,6 @@
+# /etc/cron.d/borg-status
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+0 12 * * * root /opt/borg-scripts/borg-status.sh
+
