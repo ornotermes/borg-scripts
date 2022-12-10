@@ -64,10 +64,13 @@ MAILTO="<personal.email@example.com>"
 
 # Scripts included
 
-## borg-backup-local.sh
+## [borg-backup-local.sh](borg-backup-local.md)
 Backup to local block devices that's normally sits unmounted, like a hot-swappable harddrive or USB drive.
 See <borg-backup-local.md>
 
-## botg-backup-remote.sh
+## [borg-backup-remote.sh](borg-backup-remote.md)
 Backup to an already mounted disk, or to a remote host over SSH, it can try to find a drive locally before trying SSH.
 See <borg-backup-remote.md>
+
+## [borg-status.sh](borg-status.md)
+Make sure the backups isn't too old, it will tell you what backups is older than the set limits.
