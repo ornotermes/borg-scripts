@@ -32,10 +32,7 @@ Here is example lines for 4 disks
 ```
 
 ### /etc/borg/password
-Contains a plain text password shared among all your backups, this is used to encrypt the backups so your data is safe if someone gets their grubby mits on one of your backup drives. I don't see a strong reason to use different passwords, one good password should be enough.
-```
-your_secret_password_for_archive_keys
-```
+See [a README.md](README.md#generate-and-use-a-password-file).
 
 ### /etc/borg/local-base-dir
 Base path for your backup mount points. Could be for example ```/backup/``` for it to use /backup/1a for that job, or ```/backup-``` to use /backup-1a/.

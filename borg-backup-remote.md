@@ -18,10 +18,7 @@ You need to create a few files with configuration for this script, they support 
 The backup sets are denoted by letters, each set can have a set of folders to backup, you can exlude paths from all sets or specific sets, and you can set up multiple ways to backup each set, they have a number followed by a letter for the set, like 1a, 2a, 3a for example.
 
 ### /etc/borg/password
-Contains a plain text password shared among all your backups, this is used to encrypt the backups so your data is safe if someone gets their grubby mits on one of your backup drives. I don't see a strong reason to use different passwords, one good password should be enough.
-```
-your_secret_password_for_archive_keys
-```
+See [a README.md](README.md#generate-and-use-a-password-file). 
 
 ### /etc/borg/local-sets
 Defines what folders to include in the backup set. This script has the ```--one-file-system``` option to not traverse partitions, it's a preference for me and makes backuping to multiple sets easier, but you need to be a bit more specific.
